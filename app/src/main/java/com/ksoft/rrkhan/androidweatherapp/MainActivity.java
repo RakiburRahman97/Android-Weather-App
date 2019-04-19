@@ -3,11 +3,14 @@ package com.ksoft.rrkhan.androidweatherapp;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-
-
 import android.os.Looper;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.app.ActivityCompat;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -25,12 +28,6 @@ import com.ksoft.rrkhan.androidweatherapp.Adapter.ViewpagerAdapter;
 import com.ksoft.rrkhan.androidweatherapp.Common.Common;
 
 import java.util.List;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.app.ActivityCompat;
-import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
