@@ -20,7 +20,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:text="Weather in London,GB"
+            android:text="@string/weather_in_london_gb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -52,7 +52,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Weather in London,GB"
+            android:text="@string/weather_in_london_gb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -61,7 +61,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Weather in London,GB"
+            android:text="@string/weather_in_london_gb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
