@@ -9,5 +9,7 @@
     <string name="humidity">Humidity</string>
     <string name="sunrise">Sunrise</string>
     <string name="sunset">Sunset</string>
+    <string name="weather_forcast">5 Days Weather Forcast</string>
+    <string name="weather_in_london_gb">Weather in London,GB</string>
 
 </resources>
