@@ -87,10 +87,12 @@ public class TodayWeatherFragment extends Fragment {
                     @Override
                     public void accept(WeatherResult weatherResult) throws Exception {
                                                                                                                                                                                                                                                                                              //Load Image
-                        Picasso.get().load(new StringBuilder("https://openweathermap.org/img/w/").append(weatherResult.getWeather().get(0).getIcon()).append("png").toString()).into(img_weather);
+                        Picasso.get().load(new StringBuilder("https://openweathermap.org/img/w/").append(weatherResult.getWeather().get(0).getIcon()).append(".png").toString()).into(img_weather);
 
                         txt_city_name.setText(weatherResult.getName());
-                        txt_description.setText(new StringBuilder("Weather in ").append(weatherResult.getName()).toString());
+
+                        txt_description.setText(weatherResult.getWeather().get(0).getDescription());
+                        txt_wind.setText(new StringBuilder("Speed: ").append(String.valueOf(weatherResult.getWind().getSpeed())).append(" Deg: ").append(String.valueOf(weatherResult.getWind().getDeg())).toString());
                         txt_temperature.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getTemp())).append("°C").toString());
                         txt_date_time.setText(Common.convertUnixToDate(weatherResult.getDt()));
                         txt_pressure.setText(new StringBuilder(String.valueOf(weatherResult.getMain().getPressure())).append(" hpa").toString());
@@ -106,8 +108,7 @@ public class TodayWeatherFragment extends Fragment {
 
                     }, new Consumer<Throwable>() {
                                                                                                                                                                                                                                                                                          @Override
-                                                                                                                                                                                                                                                                                         public void accept(Throwable throwable) throws Exception {
-                                                                                                                                                                                                                                                                                             Toast.makeText(getActivity(),""+throwable.getMessage(), Toast.LENGTH_SHORT).show();
+                                                                                                                                                                                                                                                                                         public void accept(Throwable throwable) throws Exception { Toast.makeText(getActivity(),""+throwable.getMessage(), Toast.LENGTH_SHORT).show();
                                                                                                                                                                                                                                                                                          }
                 }
         ));

@@ -11,5 +11,7 @@
     <string name="sunset">Sunset</string>
     <string name="weather_forcast">5 Days Weather Forcast</string>
     <string name="weather_in_london_gb">Weather in London,GB</string>
+    <string name="wind_description">Speed: 1 Deg: 1</string>
+    <string name="geo_coord">[45.6, 89.5]</string>
 
 </resources>
