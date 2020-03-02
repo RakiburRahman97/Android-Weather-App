@@ -2,16 +2,17 @@
     <string name="app_name">Android Weather App</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Todays Weather</string>
+    <string name="hello_blank_fragment">Today\'s Weather</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="wind">Wind</string>
     <string name="pressure">Pressure</string>
     <string name="humidity">Humidity</string>
     <string name="sunrise">Sunrise</string>
     <string name="sunset">Sunset</string>
-    <string name="weather_forcast">5 Days Weather Forcast</string>
-    <string name="weather_in_london_gb">Weather in London,GB</string>
+    <string name="weather_forecast">5 Days Weather Forecast</string>
+    <string name="weather_in">Weather in London,GB</string>
     <string name="wind_description">Speed: 1 Deg: 1</string>
     <string name="geo_coord">[45.6, 89.5]</string>
+    <string name="day">Wednesday</string>
 
 </resources>

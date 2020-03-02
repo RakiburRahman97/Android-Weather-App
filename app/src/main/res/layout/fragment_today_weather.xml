@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/weather_panel"
             android:layout_alignEnd="@+id/weather_panel"
-            android:text="@string/weather_in_london_gb"
+            android:text="@string/weather_in"
             android:textColor="@color/colorPrimary"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -58,7 +58,7 @@
             android:id="@+id/txt_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/weather_in_london_gb"
+            android:text="@string/weather_in"
             android:textAllCaps="true"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
@@ -68,7 +68,7 @@
             android:id="@+id/txt_date_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/weather_in_london_gb"
+            android:text="@string/weather_in"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
             android:textStyle="bold" />
